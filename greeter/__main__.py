@@ -22,21 +22,17 @@ from korth_spirit import Instance, EventEnum
 from korth_spirit.coords import Coordinates
 from korth_spirit.sdk import aw_wait
 
-with Instance(name="Portal Mage") as bot:
+with Instance(name=input("Bot Name: ")) as bot:
     try:
-        (
-            bot
-                .login(
-                    citizen_number=(int(input("Citizen Number: "))),
-                    password=input("Password: ")
-                )
-                .subscribe(
-                    EventEnum.AW_EVENT_AVATAR_ADD,
-                    lambda e: bot.say(f"Salutations {e.avatar_name}!")
-                )
-                .enter_world(input("World: "))
-                .move_to(Coordinates(0, 0, 0))
-        )
+        bot.login(
+            citizen_number=(int(input("Citizen Number: "))),
+            password=input("Password: ")
+        ).subscribe(
+            EventEnum.AW_EVENT_AVATAR_ADD,
+            lambda e: bot.say(f"Salutations {e.avatar_name}!")
+        ).enter_world(
+            input("World: ")
+        ).move_to(Coordinates(0, 0, 0))
     except Exception as e:
         print("An error occurred:", e)
         exit()
