@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is an example program that users the Spirit of Korth's Software Development Wrapper for Active Worlds to interact with the [Active Worlds](https://www.activeworlds.com). This project or its contributors are not affiliated with Active Worlds. This program was inspired by the [Greeting Bot](http://wiki.activeworlds.com/index.php?title=SDK_Sample_Program_1) written in C using the original Active Worlds SDK. The Active Worlds SDK is provided in aw64.dll. By using the active worlds SDK, you are agreeing to the terms of the [Active Worlds SDK License Agreement](https://www.activeworlds.com/sdk/download.htm).
+This is an example program that uses the Spirit of Korth's Software Development Wrapper for Active Worlds to interact with the [Active Worlds](https://www.activeworlds.com). This project or its contributors are not affiliated with Active Worlds. This program was inspired by the [Greeting Bot](http://wiki.activeworlds.com/index.php?title=SDK_Sample_Program_1) written in C using the original Active Worlds SDK. The Active Worlds SDK is provided in aw64.dll. By using the active worlds SDK, you are agreeing to the terms of the [Active Worlds SDK License Agreement](https://www.activeworlds.com/sdk/download.htm).
 
 ## Usage
 
