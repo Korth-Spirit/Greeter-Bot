@@ -21,7 +21,6 @@
 from korth_spirit import ConfigurableInstance, EventEnum
 from korth_spirit.configuration import (AggregateConfiguration,
                                         InputConfiguration, JsonConfiguration)
-from korth_spirit.sdk import aw_wait
 
 with ConfigurableInstance(
     AggregateConfiguration(
