@@ -31,14 +31,9 @@ with ConfigurableInstance(
         }
     )
 ) as bot:
-    try:
-        bot.bus.subscribe(
-            EventEnum.AW_EVENT_AVATAR_ADD,
-            lambda e: bot.say(f"Salutations {e.avatar_name}!")
-        )
-    except Exception as e:
-        print("An error occurred:", e)
-        exit()
-
-    while True:
-        aw_wait(1)
+    bot.bus.subscribe(
+        EventEnum.AW_EVENT_AVATAR_ADD,
+        lambda e: bot.say(f"Salutations {e.avatar_name}!")
+    )
+        
+    bot.main_loop()
