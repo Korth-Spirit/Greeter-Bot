@@ -19,16 +19,10 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 from korth_spirit import ConfigurableInstance, EventEnum
-from korth_spirit.configuration import (AggregateConfiguration,
-                                        InputConfiguration, JsonConfiguration)
+from korth_spirit.configuration import JsonConfiguration
 
 with ConfigurableInstance(
-    AggregateConfiguration(
-        configurations={
-            JsonConfiguration: ('configuration.json',),
-            InputConfiguration: (),
-        }
-    )
+    JsonConfiguration('configuration.json')
 ) as bot:
     bot.bus.subscribe(
         EventEnum.AW_EVENT_AVATAR_ADD,
