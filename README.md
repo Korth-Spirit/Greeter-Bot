@@ -46,7 +46,6 @@ Configuration example:
         "y": 0,
         "z": 0
     },
-    "plugin_path": "plugins",
     "citizen_number": 123456,
     "password": "password"
 }
